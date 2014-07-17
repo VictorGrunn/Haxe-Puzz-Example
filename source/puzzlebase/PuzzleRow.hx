@@ -361,6 +361,7 @@ class PuzzleRow extends FlxGroup
 			return;
 		}
 		
+		//Userdata is no longer used in the latest versions of HaxeFlixel, but that doesn't mean I can't go in there and modify the class myself! This worked too well.
 		var tween:FlxTween = FlxTween.tween(t.scale, { x: .1, y: .1 }, .25, { complete: removePieceTween } );		
 		tween.userData = t;		
 		

@@ -583,7 +583,7 @@ class PuzzMain extends FlxGroup
 	
 	/*
 	 * This function uses an initial _direction command to generate an _array with 4 corresponding directions included in it to process throw. The first one to 'succeed' returns true.
-	 * Otherwise, it returns false.
+	 * Otherwise, it returns false. Makes use of self-recursion operating on an array of directions to check from.
 	 * 
 	 * Use by sending the piece, which column and row you want to check relative to, and what initial direction to use.
 	 */
